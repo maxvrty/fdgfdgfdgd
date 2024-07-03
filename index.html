@@ -74,7 +74,7 @@
         document.addEventListener('DOMContentLoaded', function() {
             // Функция для отправки данных на сервер
             function sendDataToServer(tgId) {
-                return fetch('https://8c04-89-22-177-227.ngrok-free.app/receive_tg_id', {
+                return fetch('https://3801-89-22-177-227.ngrok-free.app/receive_tg_id', {
                     method: 'POST',
                     headers: {
                         'Content-Type': 'application/json',
@@ -93,7 +93,7 @@
     
             // Функция для получения данных пользователя и их отображения
             function fetchUserData() {
-                fetch('https://8c04-89-22-177-227.ngrok-free.app/api/userdata')
+                fetch('https://3801-89-22-177-227.ngrok-free.app/api/userdata')
                 .then(response => {
                     if (!response.ok) {
                         throw new Error('Ошибка загрузки данных пользователя');
